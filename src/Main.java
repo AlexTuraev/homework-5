@@ -14,50 +14,53 @@ public class Main {
 
         // ------------------- Task2 Homework-5 -------------------
         System.out.println("\n------------------- Task2 Homework-5 -------------------");
-        String str = "";
 
         for (int i = 0; i < arr1.length; i++) {
-            System.out.print(str + arr1[i]);
-            str = ", ";
+            System.out.print(arr1[i]);
+            if (i < arr1.length-1){
+                System.out.print(", ");
+            }
         }
 
-        str = "";
         System.out.println();
         for (int i = 0; i < arr2.length; i++) {
-            System.out.print(str + arr2[i]);
-            str = ", ";
+            System.out.print(arr2[i]);
+            if (i < arr2.length-1){
+                System.out.print(", ");
+            }
         }
 
         System.out.println();
-        // та же логика, но без использования String (нет "," в конце)
         for (int i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i]);
             if (i < arr3.length-1){
-                System.out.print(arr3[i] + ", ");
-            } else {
-                System.out.println(arr3[i]);
+                System.out.print(", ");
             }
         }
 
         // ------------------- Task3 Homework-5 -------------------
         System.out.println("\n------------------- Task3 Homework-5 -------------------");
-        str = "";
         for (int i = arr1.length - 1; i >= 0 ; i--) {
-            System.out.print(str + arr1[i]);
-            str = ", ";
+            System.out.print(arr1[i]);
+            if (i > 0){
+                System.out.print(", ");
+            }
         }
 
-        str = "";
         System.out.println();
         for (int i = arr2.length - 1; i >= 0; i--) {
-            System.out.print(str + arr2[i]);
-            str = ", ";
+            System.out.print(arr2[i]);
+            if (i > 0){
+                System.out.print(", ");
+            }
         }
 
-        str = "";
         System.out.println();
         for (int i = arr3.length - 1; i >= 0; i--) {
-            System.out.print(str + arr3[i]);
-            str = ", ";
+            System.out.print(arr3[i]);
+            if (i > 0){
+                System.out.print(", ");
+            }
         }
 
         // ------------------- Task4 Homework-5 -------------------
